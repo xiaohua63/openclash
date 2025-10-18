@@ -50,11 +50,11 @@ SelectLR: &SelectLR {type: select, proxies: [低倍率线路, 高质量线路, �
 # ==================== 代理提供者 ====================
 proxy-providers:
   # 优质订阅源 - 优质节点集合，使用时请修改
-  优质服务商: {<<: *BaseProvider, url: 'https://3.u200.xyz/api/v1/client/subscribe?token=ddb603f2661ffb0fe7a5783ed3a83775', override: {additional-prefix: '[优] '}}
+  优质服务商: {<<: *BaseProvider, url: '', override: {additional-prefix: '[优] '}}
   # 备用订阅源 - 次优节点集合，使用时请修改
-  备用服务商: {<<: *BaseProvider, url: 'https://45.137.180.216/link/653c727ed9e14b589fdbd5376f9d89fd?burn=sLqjBrNfGVL50Gng', override: {additional-prefix: '[备] '}}
+  备用服务商: {<<: *BaseProvider, url: '', override: {additional-prefix: '[备] '}}
   # 中转订阅源 - 中转服务连接，使用时请修改
-  中转服务商: {<<: *BaseProvider, url: 'https://xtls.rprx.vision/api/v1/client/subscribe?token=1e81be8d168194160f05f1d73b2b87f2', override: {additional-prefix: '[中] ', dialer-proxy: 中转服务}}
+  中转服务商: {<<: *BaseProvider, url: '', override: {additional-prefix: '[中] ', dialer-proxy: 中转服务}}
 
 # ==================== 监听器 ====================
 listeners:
